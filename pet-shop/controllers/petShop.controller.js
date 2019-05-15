@@ -11,6 +11,20 @@ export class PetShopController {
 	}
 
 	initiatePetShop() {
+		// this.fetchAnimalCategories()
+		// 	.then(response => {
+
+		// 		return response.json();
+		// 	})
+		// 	.then(data => {
+		// 		const animalCategories = data;
+		// 		const petsToStore = this.transformAnimalsIntoPets(animalCategories);
+		
+		// 		this.storePets(petsToStore);
+		// 		this.fillTopCategories();
+		// 		this.renderMainElements();
+		// 		this.addMainListeners();
+		// 	});
 		const animalCategories = this.fetchAnimalCategories();
 		const petsToStore = this.transformAnimalsIntoPets(animalCategories);
 
@@ -21,6 +35,7 @@ export class PetShopController {
 	}
 
 	fetchAnimalCategories() {
+		// const url = '../assets/pets.json';
 		let fetchedAnimals;
 		let animalsRequest = new XMLHttpRequest();
 
@@ -33,6 +48,8 @@ export class PetShopController {
 		animalsRequest.send();
 
 		return fetchedAnimals;
+
+		// return fetch(url);
 	}
 
 	transformAnimalsIntoPets(animalCategories) {
