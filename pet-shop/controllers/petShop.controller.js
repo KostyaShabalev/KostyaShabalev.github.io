@@ -21,6 +21,7 @@ export class PetShopController {
 	}
 
 	fetchAnimalCategories() {
+		const url = 'https://kostyashabalev.github.io/pet-shop/assets/pets.json';
 		let fetchedAnimals;
 		let animalsRequest = new XMLHttpRequest();
 
