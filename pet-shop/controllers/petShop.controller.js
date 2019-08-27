@@ -31,7 +31,7 @@ export class PetShopController {
 	}
 
 	fetchAnimalCategories() {
-		const url = 'https://kostyashabalev.github.io/pet-shop/assets/pets.json';
+		const url = 'https://kshab.github.io/pet-shop/assets/pets.json';
 
 		return fetch(url);
 	}
